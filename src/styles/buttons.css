@@ -1,0 +1,19 @@
+@import './globals.css';
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300;
+    }
+
+    .btn-outline {
+        @apply border-2 border-primary/20 hover:bg-primary/10 text-primary px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300;
+    }
+
+    .btn-primary:hover {
+        @apply text-white;
+    }
+
+    .btn-outline:hover {
+        @apply text-primary;
+    }
+}
